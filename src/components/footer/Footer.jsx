@@ -54,7 +54,7 @@ function Footer() {
 
           <Box sx={{ display: "flex", flexDirection: "column", gap: 1 }}>
             <Link
-              href="mailto:kaylen.ton@gmail.com"
+              href="mailto:kaylent2k@gmail.com"
               sx={{
                 fontFamily: '"Space Mono", monospace',
                 fontSize: { xs: "0.875rem", sm: "1rem", md: "1.125rem" },
@@ -66,7 +66,7 @@ function Footer() {
                 },
               }}
             >
-              kaylen.ton@gmail.com
+              kaylent2k@gmail.com
             </Link>
             <Link
               href="https://www.linkedin.com/in/kaylenton/"
