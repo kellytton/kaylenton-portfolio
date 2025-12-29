@@ -30,9 +30,10 @@ function Navbar() {
         sx={{
           display: 'flex',
           listStyle: 'none',
-          gap: { xs: 2, md: 4 },
+          gap: { xs: 1, sm: 2, md: 4 },
           margin: 0,
           padding: 0,
+          flexShrink: 0,
         }}
       >
         {navLinks.map((link) => (
@@ -44,7 +45,7 @@ function Navbar() {
                 color: '#000',
                 fontFamily: '"Montserrat", sans-serif',
                 fontWeight: 500,
-                fontSize: { xs: '0.875rem', md: '1rem' },
+                fontSize: { xs: '0.7rem', sm: '0.875rem', md: '1rem' },
                 letterSpacing: '0.05em',
                 '&:hover': {
                   opacity: 0.7,

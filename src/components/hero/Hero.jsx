@@ -7,8 +7,8 @@ function Hero() {
       sx={{
         display: "flex",
         flexDirection: "column",
-        padding: { xs: "2rem 2rem", sm: "3rem 3rem", md: "3rem 5rem", lg: "4rem 8rem" },
-        minHeight: "70vh",
+        padding: { xs: "2rem 2rem 3rem", sm: "3rem 3rem 4rem", md: "3rem 5rem 5rem", lg: "4rem 8rem 6rem" },
+        minHeight: { xs: "auto", md: "70vh" },
       }}
     >
       {/* Title Section */}

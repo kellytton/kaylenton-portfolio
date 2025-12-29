@@ -77,10 +77,10 @@ function Skills() {
       id="skills"
       sx={{
         padding: {
-          xs: "5rem 2rem",
-          sm: "6rem 3rem",
-          md: "8rem 5rem",
-          lg: "10rem 8rem",
+          xs: "6rem 2rem",
+          sm: "8rem 3rem",
+          md: "10rem 5rem",
+          lg: "12rem 8rem",
         },
         overflowX: "hidden",
       }}

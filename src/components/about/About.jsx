@@ -1,10 +1,15 @@
-import { Box, Typography, Chip } from "@mui/material";
+import { Box, Typography, Chip, useMediaQuery, useTheme } from "@mui/material";
 
 function About() {
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
+
   const chips = [
-    "Bachelor of Science in Information Science",
-    "Tampa, FL",
-    "Social Media Strategist Award",
+    {
+      label: isMobile ? "B.S. in Information Science" : "Bachelor of Science in Information Science",
+    },
+    { label: "Tampa, FL" },
+    { label: "Social Media Strategist Award" },
   ];
   return (
     <Box
@@ -12,11 +17,12 @@ function About() {
       id="about"
       sx={{
         padding: {
-          xs: "5rem 2rem",
-          sm: "6rem 3rem",
-          md: "8rem 5rem",
-          lg: "10rem 8rem",
+          xs: "6rem 2rem",
+          sm: "8rem 3rem",
+          md: "10rem 5rem",
+          lg: "12rem 8rem",
         },
+        overflowX: "hidden",
       }}
     >
       <Box
@@ -75,8 +81,8 @@ function About() {
           <Box sx={{ display: "flex", flexWrap: "wrap", gap: 1.5 }}>
             {chips.map((chip) => (
               <Chip
-                key={chip}
-                label={chip}
+                key={chip.label}
+                label={chip.label}
                 sx={{
                   fontFamily: '"Space Mono", monospace',
                   fontSize: { xs: "0.75rem", sm: "0.875rem" },
