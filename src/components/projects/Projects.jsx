@@ -1,4 +1,4 @@
-import { Box } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import ProjectCard from "./ProjectCard";
 import projectsData from "../../data/projects.json";
 
@@ -9,11 +9,28 @@ function Projects() {
       id="projects"
       sx={{
         padding: {
-          xs: "4rem 1.5rem",
-          md: "6rem 3rem",
+          xs: "5rem 2rem",
+          sm: "6rem 3rem",
+          md: "8rem 5rem",
+          lg: "10rem 8rem",
         },
       }}
     >
+      {/* Section Header */}
+      <Typography
+        variant="h2"
+        sx={{
+          fontFamily: '"Public Sans", sans-serif',
+          fontWeight: 700,
+          fontStyle: "italic",
+          fontSize: { xs: "2rem", sm: "2.5rem", md: "3rem", lg: "3.5rem" },
+          color: "#000",
+          mb: 5,
+        }}
+      >
+        PROJECTS
+      </Typography>
+
       <Box
         sx={{
           display: "flex",

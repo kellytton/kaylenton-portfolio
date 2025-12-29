@@ -7,7 +7,7 @@ function Hero() {
       sx={{
         display: "flex",
         flexDirection: "column",
-        padding: { xs: "2rem 1.5rem", md: "2rem 3rem" },
+        padding: { xs: "2rem 2rem", sm: "3rem 3rem", md: "3rem 5rem", lg: "4rem 8rem" },
         minHeight: "70vh",
       }}
     >
@@ -128,9 +128,9 @@ function Hero() {
           sx={{
             textAlign: { xs: "left", md: "right" },
             // On mobile/tablet, take full width but keep navbar-like spacing
-            width: { xs: "calc(100% + 3rem)", md: "auto" },
-            mx: { xs: "-1.5rem", md: 0 },
-            px: { xs: "1.5rem", md: 0 },
+            width: { xs: "calc(100% + 4rem)", md: "auto" },
+            mx: { xs: "-2rem", md: 0 },
+            px: { xs: "2rem", md: 0 },
           }}
         >
           <Box

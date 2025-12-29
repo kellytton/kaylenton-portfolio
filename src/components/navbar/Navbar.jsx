@@ -14,7 +14,7 @@ function Navbar() {
       sx={{
         display: 'flex',
         alignItems: 'center',
-        padding: { xs: '1.5rem', md: '2rem 3rem' },
+        padding: { xs: '1.5rem 2rem', sm: '2rem 3rem', md: '2.5rem 5rem', lg: '2.5rem 8rem' },
         gap: 2,
       }}
     >

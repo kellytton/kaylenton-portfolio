@@ -36,9 +36,20 @@ const skillsData = {
   },
 };
 
-const getSectionTitleStyles = (maxLines) => ({
+// Section header style (bold - for "SKILLS" header)
+const sectionHeaderStyles = {
   fontFamily: '"Public Sans", sans-serif',
   fontWeight: 700,
+  fontStyle: "italic",
+  fontSize: { xs: "2rem", sm: "2.5rem", md: "3rem", lg: "3.5rem" },
+  color: "#000",
+  mb: 5,
+};
+
+// Category title styles (semi-bold - for DATA PROCESSING, TECHNOLOGIES, etc.)
+const getCategoryTitleStyles = (maxLines) => ({
+  fontFamily: '"Public Sans", sans-serif',
+  fontWeight: 600,
   fontStyle: "italic",
   fontSize: {
     xs: maxLines === 1 ? "clamp(1.25rem, 8vw, 2rem)" : "clamp(1.5rem, 6vw, 2rem)",
@@ -66,18 +77,19 @@ function Skills() {
       id="skills"
       sx={{
         padding: {
-          xs: "4rem 1.5rem",
-          sm: "5rem 3rem",
-          md: "6rem 3rem",
-          lg: "6rem 10rem",
-        },
-        // At 950px+, increase horizontal padding
-        "@media (min-width: 950px)": {
-          padding: "6rem 6rem",
+          xs: "5rem 2rem",
+          sm: "6rem 3rem",
+          md: "8rem 5rem",
+          lg: "10rem 8rem",
         },
         overflowX: "hidden",
       }}
     >
+      {/* Section Header */}
+      <Typography variant="h2" sx={sectionHeaderStyles}>
+        SKILLS
+      </Typography>
+
       <Box
         sx={{
           display: "grid",
@@ -98,8 +110,8 @@ function Skills() {
           {/* Data Processing */}
           <Box>
             <Typography
-              variant="h2"
-              sx={getSectionTitleStyles(skillsData.dataProcessing.wordCount)}
+              variant="h3"
+              sx={getCategoryTitleStyles(skillsData.dataProcessing.wordCount)}
             >
               {skillsData.dataProcessing.title}
             </Typography>
@@ -115,8 +127,8 @@ function Skills() {
           {/* Miscellaneous */}
           <Box>
             <Typography
-              variant="h2"
-              sx={getSectionTitleStyles(skillsData.miscellaneous.wordCount)}
+              variant="h3"
+              sx={getCategoryTitleStyles(skillsData.miscellaneous.wordCount)}
             >
               {skillsData.miscellaneous.title}
             </Typography>
@@ -140,9 +152,9 @@ function Skills() {
           }}
         >
           <Typography
-            variant="h2"
+            variant="h3"
             sx={{
-              ...getSectionTitleStyles(skillsData.technologies.wordCount),
+              ...getCategoryTitleStyles(skillsData.technologies.wordCount),
               textAlign: { xs: "left", md: "right" },
             }}
           >
