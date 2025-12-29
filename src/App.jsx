@@ -1,13 +1,13 @@
-import { useState } from "react";
-import "./App.css";
+import { Box } from '@mui/material';
+import Navbar from './components/navbar';
+import Hero from './components/hero';
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <>
-      <h1>hi</h1>
-    </>
+    <Box sx={{ minHeight: '100vh', backgroundColor: '#fff' }}>
+      <Navbar />
+      <Hero />
+    </Box>
   );
 }
 
