@@ -1,0 +1,24 @@
+[
+  {
+    "id": "lda-topic-modeling-covid-related-tweets",
+    "name": "LDA Topic Modeling Covid-Related Tweets",
+    "skills": [
+      "R",
+      "text mining",
+      "cleaning",
+      "topic modeling",
+      "visualization"
+    ],
+    "packages": [
+      "tidyverse",
+      "tidytext",
+      "qdap",
+      "tm",
+      "SnowballC",
+      "topicmodels"
+    ],
+    "description": "Analyzed 500,000+ COVID-19 tweets using R to uncover temporal topic shifts. Built a Document-Term Matrix and implemented LDA topic modeling, iteratively tuning k-values across three distinct time periods. Identified a transition from pandemic updates (2020) to vaccine distribution and mandate discourse (2021), demonstrating data-driven insight extraction from unstructured text.",
+    "slides": ["1.png", "2.png", "3.png", "4.png", "5.png", "end.png"],
+    "githubUrl": "https://github.com/KaylenTon/LIS4761-Final-Project"
+  }
+]

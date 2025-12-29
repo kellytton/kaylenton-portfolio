@@ -2,6 +2,7 @@ import { Box } from '@mui/material';
 import Navbar from './components/navbar';
 import Hero from './components/hero';
 import Skills from './components/skills';
+import Projects from './components/projects';
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <Navbar />
       <Hero />
       <Skills />
+      <Projects />
     </Box>
   );
 }
