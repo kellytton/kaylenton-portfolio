@@ -3,6 +3,7 @@ import { Box, Link } from '@mui/material';
 function Navbar() {
   const navLinks = [
     { label: 'ABOUT', href: '#about' },
+    { label: 'SKILLS', href: '#skills' },
     { label: 'PROJECTS', href: '#projects' },
     { label: 'CONTACTS', href: '#contacts' },
   ];
