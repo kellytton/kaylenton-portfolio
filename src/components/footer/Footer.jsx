@@ -102,6 +102,22 @@ function Footer() {
             >
               GitHub
             </Link>
+            <Link
+              href="/src/assets/resume.pdf"
+              download
+              sx={{
+                fontFamily: '"Space Mono", monospace',
+                fontSize: { xs: "0.875rem", sm: "1rem", md: "1.125rem" },
+                color: "#000",
+                textDecoration: "none",
+                transition: "color 0.2s",
+                "&:hover": {
+                  color: "#0ea4bf",
+                },
+              }}
+            >
+              Resume
+            </Link>
           </Box>
         </Box>
 

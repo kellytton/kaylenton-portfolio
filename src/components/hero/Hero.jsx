@@ -121,6 +121,32 @@ function Hero() {
           >
             GitHub
           </Button>
+          <Button
+            href="/src/assets/resume.pdf"
+            download
+            sx={{
+              backgroundColor: "transparent",
+              color: "#000",
+              fontFamily: '"Public Sans", sans-serif',
+              fontWeight: 600,
+              fontSize: { xs: "0.875rem", sm: "1rem", md: "1.1rem" },
+              padding: {
+                xs: "0.6rem 1.5rem",
+                sm: "0.7rem 2rem",
+                md: "0.8rem 2.5rem",
+              },
+              borderRadius: "50px",
+              border: "1.5px solid #000",
+              textTransform: "none",
+              "&:hover": {
+                backgroundColor: "rgba(16, 192, 223, 0.1)",
+                transform: "translateY(-2px)",
+                boxShadow: "0 4px 12px rgba(91, 192, 190, 0.2)",
+              },
+            }}
+          >
+            Resume
+          </Button>
         </Box>
 
         {/* Tagline Section */}
