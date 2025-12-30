@@ -33,20 +33,21 @@ function Footer() {
         />
       </Box>
 
-      {/* Gradient background - starts below divider, covers full width */}
+      {/* Gradient background - covers entire footer including above divider */}
       <Box
         sx={{
           position: "absolute",
-          top: { xs: "4rem", sm: "5rem", md: "6rem", lg: "8rem" },
+          top: 0,
           left: 0,
           width: "100%",
           height: "100%",
           background: `
-            radial-gradient(ellipse 80% 120% at 10% 80%, rgba(16, 192, 223, 0.28) 0%, transparent 55%),
-            radial-gradient(ellipse 60% 80% at 90% 20%, rgba(91, 79, 217, 0.32) 0%, transparent 50%),
+            linear-gradient(to bottom, transparent 0%, rgba(255,255,255,0.3) 15%, transparent 30%),
+            radial-gradient(ellipse 80% 120% at 10% 90%, rgba(16, 192, 223, 0.28) 0%, transparent 55%),
+            radial-gradient(ellipse 60% 80% at 90% 40%, rgba(91, 79, 217, 0.32) 0%, transparent 50%),
             radial-gradient(ellipse 100% 60% at 50% 100%, rgba(125, 253, 204, 0.25) 0%, transparent 45%),
-            radial-gradient(ellipse 50% 70% at 70% 70%, rgba(16, 192, 223, 0.2) 0%, transparent 50%),
-            radial-gradient(ellipse 70% 50% at 20% 30%, rgba(91, 79, 217, 0.18) 0%, transparent 55%),
+            radial-gradient(ellipse 50% 70% at 70% 80%, rgba(16, 192, 223, 0.2) 0%, transparent 50%),
+            radial-gradient(ellipse 70% 50% at 20% 50%, rgba(91, 79, 217, 0.18) 0%, transparent 55%),
             radial-gradient(ellipse 40% 90% at 85% 90%, rgba(125, 253, 204, 0.2) 0%, transparent 50%)
           `,
           pointerEvents: "none",
