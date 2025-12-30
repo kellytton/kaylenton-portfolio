@@ -16,7 +16,7 @@ function App() {
           top: 0,
           left: 0,
           width: '100%',
-          height: { xs: '140vh', md: '125vh' },
+          height: { xs: '95vh', sm: '110vh', md: '125vh' },
           background: `
             radial-gradient(ellipse 45% 35% at 8% 15%, rgba(16, 192, 223, 0.32) 0%, transparent 70%),
             radial-gradient(ellipse 90% 45% at 72% 8%, rgba(16, 192, 223, 0.28) 0%, transparent 65%),

@@ -66,7 +66,13 @@ function Hero() {
         }}
       >
         {/* CTA Buttons */}
-        <Box sx={{ display: "flex", gap: { xs: 1.5, sm: 2 } }}>
+        <Box
+          sx={{
+            display: "flex",
+            flexWrap: "wrap",
+            gap: { xs: 1, sm: 1.5, md: 2 },
+          }}
+        >
           <Button
             href="https://www.linkedin.com/in/kaylenton/"
             target="_blank"
@@ -76,15 +82,17 @@ function Hero() {
               color: "#000",
               fontFamily: '"Public Sans", sans-serif',
               fontWeight: 600,
-              fontSize: { xs: "0.875rem", sm: "1rem", md: "1.1rem" },
+              fontSize: { xs: "0.75rem", sm: "0.875rem", md: "1rem", lg: "1.1rem" },
               padding: {
-                xs: "0.6rem 1.5rem",
-                sm: "0.7rem 2rem",
-                md: "0.8rem 2.5rem",
+                xs: "0.5rem 1rem",
+                sm: "0.6rem 1.5rem",
+                md: "0.7rem 2rem",
+                lg: "0.8rem 2.5rem",
               },
               borderRadius: "50px",
               border: "1.5px solid #000",
               textTransform: "none",
+              minWidth: "auto",
               "&:hover": {
                 backgroundColor: "#0ea4bfff",
                 transform: "translateY(-2px)",
@@ -103,15 +111,17 @@ function Hero() {
               color: "#000",
               fontFamily: '"Public Sans", sans-serif',
               fontWeight: 600,
-              fontSize: { xs: "0.875rem", sm: "1rem", md: "1.1rem" },
+              fontSize: { xs: "0.75rem", sm: "0.875rem", md: "1rem", lg: "1.1rem" },
               padding: {
-                xs: "0.6rem 1.5rem",
-                sm: "0.7rem 2rem",
-                md: "0.8rem 2.5rem",
+                xs: "0.5rem 1rem",
+                sm: "0.6rem 1.5rem",
+                md: "0.7rem 2rem",
+                lg: "0.8rem 2.5rem",
               },
               borderRadius: "50px",
               border: "1.5px solid #000",
               textTransform: "none",
+              minWidth: "auto",
               "&:hover": {
                 backgroundColor: "#0ea4bfff",
                 transform: "translateY(-2px)",
@@ -129,15 +139,17 @@ function Hero() {
               color: "#000",
               fontFamily: '"Public Sans", sans-serif',
               fontWeight: 600,
-              fontSize: { xs: "0.875rem", sm: "1rem", md: "1.1rem" },
+              fontSize: { xs: "0.75rem", sm: "0.875rem", md: "1rem", lg: "1.1rem" },
               padding: {
-                xs: "0.6rem 1.5rem",
-                sm: "0.7rem 2rem",
-                md: "0.8rem 2.5rem",
+                xs: "0.5rem 1rem",
+                sm: "0.6rem 1.5rem",
+                md: "0.7rem 2rem",
+                lg: "0.8rem 2.5rem",
               },
               borderRadius: "50px",
               border: "1.5px solid #000",
               textTransform: "none",
+              minWidth: "auto",
               "&:hover": {
                 backgroundColor: "rgba(16, 192, 223, 0.1)",
                 transform: "translateY(-2px)",
