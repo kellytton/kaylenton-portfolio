@@ -8,27 +8,63 @@ function Footer() {
       component="footer"
       id="contacts"
       sx={{
-        padding: {
-          xs: "4rem 2rem",
-          sm: "5rem 3rem",
-          md: "6rem 5rem",
-          lg: "8rem 8rem",
-        },
+        position: "relative",
+        overflow: "hidden",
       }}
     >
-      {/* Top divider line */}
+      {/* Top section with divider - no gradient */}
       <Box
         sx={{
+          padding: {
+            xs: "4rem 2rem 0",
+            sm: "5rem 3rem 0",
+            md: "6rem 5rem 0",
+            lg: "8rem 8rem 0",
+          },
+        }}
+      >
+        {/* Top divider line */}
+        <Box
+          sx={{
+            width: "100%",
+            height: "1px",
+            backgroundColor: "#000",
+          }}
+        />
+      </Box>
+
+      {/* Gradient background - starts below divider, covers full width */}
+      <Box
+        sx={{
+          position: "absolute",
+          top: { xs: "4rem", sm: "5rem", md: "6rem", lg: "8rem" },
+          left: 0,
           width: "100%",
-          height: "1px",
-          backgroundColor: "#000",
-          mb: 4,
+          height: "100%",
+          background: `
+            radial-gradient(ellipse 80% 120% at 10% 80%, rgba(16, 192, 223, 0.28) 0%, transparent 55%),
+            radial-gradient(ellipse 60% 80% at 90% 20%, rgba(91, 79, 217, 0.32) 0%, transparent 50%),
+            radial-gradient(ellipse 100% 60% at 50% 100%, rgba(125, 253, 204, 0.25) 0%, transparent 45%),
+            radial-gradient(ellipse 50% 70% at 70% 70%, rgba(16, 192, 223, 0.2) 0%, transparent 50%),
+            radial-gradient(ellipse 70% 50% at 20% 30%, rgba(91, 79, 217, 0.18) 0%, transparent 55%),
+            radial-gradient(ellipse 40% 90% at 85% 90%, rgba(125, 253, 204, 0.2) 0%, transparent 50%)
+          `,
+          pointerEvents: "none",
+          zIndex: 0,
         }}
       />
 
       {/* Footer content */}
       <Box
         sx={{
+          position: "relative",
+          zIndex: 1,
+          padding: {
+            xs: "2rem 2rem 4rem",
+            sm: "2rem 3rem 5rem",
+            md: "2rem 5rem 6rem",
+            lg: "2rem 8rem 8rem",
+          },
           display: "flex",
           flexDirection: { xs: "column", md: "row" },
           justifyContent: "space-between",
