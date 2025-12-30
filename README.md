@@ -4,7 +4,7 @@ A personal portfolio website for Kaylen Ton, a Data Scientist and Analyst based 
 
 ## Tech Stack
 
-- React
+- ReactJS
 - Vite
 - Material UI (MUI)
 
