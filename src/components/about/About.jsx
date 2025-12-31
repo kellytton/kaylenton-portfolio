@@ -109,7 +109,7 @@ function About() {
         >
           <Box
             component="img"
-            src="/src/assets/about/about-img.jpg"
+            src="/assets/about/about-img.jpg"
             alt="Kaylen Ton"
             sx={{
               maxWidth: "100%",

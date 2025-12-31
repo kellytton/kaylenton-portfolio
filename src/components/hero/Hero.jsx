@@ -132,7 +132,7 @@ function Hero() {
             GitHub
           </Button>
           <Button
-            href="/src/assets/resume.pdf"
+            href="/assets/resume.pdf"
             download
             sx={{
               backgroundColor: "transparent",

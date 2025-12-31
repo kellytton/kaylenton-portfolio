@@ -140,7 +140,7 @@ function Footer() {
               GitHub
             </Link>
             <Link
-              href="/src/assets/resume.pdf"
+              href="/assets/resume.pdf"
               download
               sx={{
                 fontFamily: '"Space Mono", monospace',

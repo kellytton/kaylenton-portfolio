@@ -20,7 +20,7 @@ function ProjectCard({ project }) {
 
   // Dynamically import slide images
   const getSlideUrl = (slideName) => {
-    return `/src/assets/projects/${project.id}/${slideName}`;
+    return `/assets/projects/${project.id}/${slideName}`;
   };
 
   return (
