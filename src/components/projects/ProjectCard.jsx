@@ -206,7 +206,7 @@ function ProjectCard({ project }) {
             lineHeight: 1.6,
             mb: 5,
             mt: 2,
-            textAlign: "justify",
+            textAlign: "left",
           }}
         >
           {project.description}
